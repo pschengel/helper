@@ -1,5 +1,5 @@
-def callSendFeedback() {
-    def postStep = {
+def call() {
+    return {
         post {
             always {
                 script {
@@ -14,6 +14,4 @@ def callSendFeedback() {
             }
         }
     }
-
-    return postStep
 }
